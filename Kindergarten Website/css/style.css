@@ -1,0 +1,262 @@
+:root{
+    --pink:#e84393;
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0rem;
+    background: rgb(29, 29, 118);
+    color: white;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background-color: var(--pink);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .2rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/home2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: red;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: rgb(29, 29, 118);
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background:#fff;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+}
+
+.main-box1{
+    background-color: rgb(244, 96, 96);
+}
+
+.main-box2{
+    background-color: rgb(244, 208, 66);
+}
+
+.main-box3{
+    background-color: rgb(104, 161, 227);
+}
+
+.box-img{
+    overflow: hidden;
+}
+
+.box-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.box-img:hover img{
+    transform: scale(1.1);
+}
+
+.in-bxx{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.in-text p{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 1000;
+    font-family: cursive;
+}
+
+.in-icon i{
+    vertical-align: middle;
+    color: var(--other-color);
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+.in-icon a{
+    color: var(--other-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main-box h3{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.main-box h3:hover{
+    color: var(--main-color);
+}
